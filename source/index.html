@@ -9,4 +9,94 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
+<body>
+  <header class="header">
+    <button class="header__menu-button" type="button">Меню</button>
+    <nav class="header__menu main-menu">
+      <h2 class="main-menu__label">Каталог</h2>
+      <ul class=" main-menu__list">
+        <li class="main-menu__item"><a href="#">Пальто</a></li>
+        <li class="main-menu__item"><a href="#">Жилеты и жакеты</a></li>
+        <li class="main-menu__item"><a href="#">Костюмы</a></li>
+        <li class="main-menu__item"><a href="#">Трикотаж</a></li>
+        <li class="main-menu__item"><a href="#">Платья</a></li>
+        <li class="main-menu__item"><a href="#">Блузы и топы</a></li>
+        <li class="main-menu__item"><a href="#">Футболки</a></li>
+        <li class="main-menu__item"><a href="#">Юбки и брюки</a></li>
+        <li class="main-menu__item"><a href="#">Аксессуары</a></li>
+        <li class="main-menu__item"><a href="#">О бренде</a></li>
+        <li class="main-menu__item"><a href="#">Оферта</a></li>
+        <li class="main-menu__item"><a href="#">Оплата и доставка</a></li>
+        <li class="main-menu__item"><a href="#">Возврат</a></li>
+        <li class="main-menu__item"><a href="#">Контакты</a></li>
+        <li class="main-menu__item"><a href="#">Отзывы</a></li>
+        <li class="main-menu__item"><a href="#">New</a></li>
+        <li class="main-menu__item"><a href="#">Sale</a></li>
+        <li class="main-menu__item"><a href="#">Looks</a></li>
+        <li class="main-menu__item"><a href="#">Блог</a></li>
+        <li class="main-menu__item"><a href="#">Streetstyle</a></li>
+        <li class="main-menu__item"><a href="#">Войти в личный кабинет</a></li>
+        <li class="main-menu__item"><a href="#">Блог</a></li>
+        <li class="main-menu__item">
+          <form class="main-menu__search" method="POST" action="#">
+            <input class="main-menu__search-field" type="text" id="menusearch" placeholder="Найти на сайте">
+            <label class="visually-hidden" for="menusearch">Найти на сайте</label>
+          </form>
+        </li>
+      </ul>
+      <button class="main-menu__close-button" type="button">Закрыть</button>
+    </nav>
+    <img class="header__logo" src="img/logo.svg" alt="I am woman. Moscow." width="156" height="28">
+    <ul class="header__icons short-menu">
+      <li class="short-menu__item">
+        <a class="short-menu__link">
+          <img src="http://placehold.it/16x16" alt="Поиск">
+        </a>
+      </li>
+      <li class="short-menu__item">
+        <a class="short-menu__link">
+          <img src="http://placehold.it/16x16" alt="Личный кабинет">
+        </a>
+      </li>
+      <li class="short-menu__item">
+        <a class="short-menu__link">
+          <img src="http://placehold.it/16x16" alt="Корзина">
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <h1 class="visually-hidden">I AM WOMAN. MOSCOW</h1>
+
+    <section class="promo">
+      <a class="promo__sale-menu" href="#">Распродажа  SS’18</a>
+      <h2 class="promo__label">Новая круизная коллекция ‘19</h2>
+      <a class="promo__link" href="#">Перейти в каталог</a>
+      <div class="promo__slider slider">
+        <img class="slider__picture" src="http://placehold.it/605x681">
+        <a class="slider__slide-name" href="#">Хлопковое платье в полоску</a>
+        <p class="slider__price">9 900 рублей</p>
+        <div class="slider_control">
+          <button class="slider__button slider__button--left">Предыдущий слайд</button>
+          <span class="slider__pages">01/3</span>
+          <button class="slider__button slider__button--left">Следующий слайд</button>
+        </div>
+        <a class="slider__link" href="#">Смотреть все</a>
+      </div>
+      <ul class="promo__side-nav side-nav">
+        <li class="side-nav__item side-nav__item--active"><a href="#">01</a></li>
+        <li class="side-nav__item"><a href="#">02</a></li>
+        <li class="side-nav__item"><a href="#">04</a></li>
+        <li class="side-nav__item"><a href="#">05</a></li>
+        <li class="side-nav__item"><a href="#">06</a></li>
+      </ul>
+      <ul class="promo__social social">
+        <li class="social__item"><a href="#">Facebook</a></li>
+        <li class="social__item"><a href="#">Youtube</a></li>
+        <li class="social__item"><a href="#">Vkontakte</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>

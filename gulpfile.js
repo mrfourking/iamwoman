@@ -25,13 +25,13 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -39,7 +39,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch(["source/img/*.svg","!source/img/flag-*.svg"], gulp.series("sprite","html","refresh"));
+  gulp.watch(["source/img/*.svg"], gulp.series("sprite","html","refresh"));
   gulp.watch("source/*.html", gulp.series("html","refresh"));
 });
 
@@ -67,7 +67,6 @@ gulp.task("webp", function() {
 gulp.task("sprite", function(){
   return gulp.src([
       "source/img/*.svg",
-      "!source/img/flag-*.svg",
       "!source/img/sprite.svg"])
     .pipe(svgstore({
       inlineSvg: true
