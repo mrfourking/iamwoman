@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>I AM WOMAN</title>
   <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
@@ -69,13 +69,27 @@
     <h1 class="visually-hidden">I AM WOMAN. MOSCOW</h1>
 
     <section class="promo">
-      <a class="promo__sale-menu" href="#">Распродажа  SS’18</a>
+      <a class="promo__sale-menu" href="#">Распродажа SS’18</a>
       <h2 class="promo__label">Новая круизная коллекция ‘19</h2>
       <a class="promo__link" href="#">Перейти в каталог</a>
       <div class="promo__slider slider">
-        <img class="slider__picture" src="http://placehold.it/605x681">
-        <a class="slider__slide-name" href="#">Хлопковое платье в полоску</a>
-        <p class="slider__price">9 900 рублей</p>
+        <ul class="slider__list">
+          <li class="slider__item slider__item--active">
+            <img class="slider__picture" src="http://placehold.it/605x681">
+            <a class="slider__name" href="#">Хлопковое платье в полоску</a>
+            <p class="slider__price">9 900 рублей</p>
+          </li>
+          <li class="slider__item">
+            <img class="slider__picture" src="http://placehold.it/605x681">
+            <a class="slider__name" href="#">Спортивный желтый костюм</a>
+            <p class="slider__price">9 900 рублей</p>
+          </li>
+          <li class="slider__item">
+            <img class="slider__picture" src="http://placehold.it/605x681">
+            <a class="slider__name" href="#">Платье — халат со стразами</a>
+            <p class="slider__price">9 900 рублей</p>
+          </li>
+        </ul>
         <div class="slider_control">
           <button class="slider__button slider__button--left">Предыдущий слайд</button>
           <span class="slider__pages">01/3</span>

@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 156 34" enable-background="new 0 0 156 34" xml:space="preserve">
+viewBox="0 0 156 34" enable-background="new 0 0 156 34" xml:space="preserve">
 <font horiz-adv-x="2048">
 <!-- Times New Roman is a trademark of The Monotype Corporation. -->
 <!-- Copyright: Copyright 2019 Adobe System Incorporated. All rights reserved. -->
@@ -19,10 +19,10 @@
 <glyph unicode="W" horiz-adv-x="1933" d="M1917,1356l0,-37C1882,1319 1853,1313 1831,1300C1809,1287 1788,1264 1768,1229C1755,1206 1734,1150 1705,1062l-378,-1093l-40,0l-309,867l-307,-867l-36,0l-403,1126C202,1179 183,1229 175,1244C162,1269 144,1288 121,1301C98,1313 66,1319 27,1319l0,37l502,0l0,-37l-24,0C470,1319 443,1311 424,1295C405,1279 396,1260 396,1237C396,1214 411,1160 440,1076l267,-761l225,647l-40,114l-32,91C846,1200 830,1230 813,1255C804,1268 794,1278 781,1287C764,1299 748,1308 731,1313C718,1317 698,1319 671,1319l0,37l528,0l0,-37l-36,0C1126,1319 1098,1311 1081,1295C1064,1279 1055,1257 1055,1230C1055,1196 1070,1137 1100,1052l260,-737l258,747C1647,1145 1662,1202 1662,1234C1662,1249 1657,1264 1648,1277C1638,1290 1626,1300 1611,1305C1586,1314 1553,1319 1512,1319l0,37z"/>
 </font>
 
-	<g id="I_AM_WOMAN">
-	<text transform="matrix(1 0 0 1 -1.1152 16.8447)" font-family="'Roboto-Medium'" font-size="24" letter-spacing="1">I AM WOMAN</text>
+<g id="I_AM_WOMAN">
+<text transform="matrix(1 0 0 1 -1.1152 16.8447)" font-family="'Roboto-Medium'" font-size="24" letter-spacing="1">I AM WOMAN</text>
 </g>
 <g id="MOSCOW">
-	<text transform="matrix(1 0 0 1 47.0444 33.748)" font-family="'Roboto-Medium'" font-size="12" letter-spacing="1">MOSCOW</text>
+<text transform="matrix(1 0 0 1 47.0444 33.748)" font-family="'Roboto-Medium'" font-size="12" letter-spacing="1">MOSCOW</text>
 </g>
 </svg>
