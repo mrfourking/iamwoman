@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0 28px;
+}
+
+.header__menu-button {
+  margin-left: 15px;
+  padding: 0;
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.header__logo {
+  display: none;
+}
+
+.header__icons {
+  margin-right: 15px;
+}

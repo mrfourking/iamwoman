@@ -1,0 +1,43 @@
+.promo {
+  background-color: $promo-bg-color;
+  background-image: url("../img/slide-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: -165px;
+  background-size: cover;
+}
+
+.promo__wrap {
+  display: flex;
+  padding: 50px 15px;
+  background-color: rgba($promo-bg-color, 0.8);
+}
+
+.promo__sale-menu,
+.promo__side-nav,
+.promo__social {
+  display: none;
+}
+
+.promo__label-wrap {
+  z-index: 1;
+  flex-shrink: 0;
+  width: 135px;
+  margin-top: 140px;
+}
+
+.promo__label {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.promo__link {
+  padding-bottom: 5px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid $link-color;
+}
+
+.promo__slider {
+  margin-left: -64px;
+}
