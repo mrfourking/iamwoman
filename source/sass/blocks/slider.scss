@@ -1,0 +1,19 @@
+.slider__list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__name,
+.slider__price,
+.slider__control,
+.slider__link {
+  display: none;
+}

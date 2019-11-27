@@ -1,0 +1,12 @@
+.short-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.short-menu__item {
+  margin-left: 30px;
+}

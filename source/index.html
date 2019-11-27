@@ -6,7 +6,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>I AM WOMAN</title>
   <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
+
+<body>
+  <header class="header container">
+    <button class="header__menu-button" type="button">
+      <span class="visually-hidden">Меню</span>
+      <svg class="header__button-image" version="1.2" width="33" height="16" stroke="#352f2f"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 33 16" xml:space="preserve">
+        <g>
+          <line x1="0" y1="1" x2="33" y2="1" stroke-width="2" />
+          <line x1="15" y1="8" x2="33" y2="8" stroke-width="2" />
+          <line x1="0" y1="15" x2="18" y2="15" stroke-width="2" />
+        </g>
+      </svg>
+    </button>
+    <nav class="header__menu main-menu hidden">
+      <button class="main-menu__close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg version="1.2" stroke="#352f2f" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve">
+          <g>
+            <line x1="0" y1="0" x2="23" y2="23" stroke-width="2" />
+            <line x1="0" y1="23" x2="23" y2="0" stroke-width="2" />
+          </g>
+        </svg>
+      </button>
+      <h2 class="main-menu__label">Каталог</h2>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Пальто</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Жилеты и жакеты</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Костюмы</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Трикотаж</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Платья</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Блузы и топы</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Футболки</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Юбки и брюки</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Аксессуары</a>
+        </li>
+      </ul>
+      <div class="main-menu__wrap">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--semibold" href="#">О бренде</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Оферта</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Возврат</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Контакты</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Отзывы</a>
+          </li>
+        </ul>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--medium" href="#">New</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--medium" href="#">Sale</a>
+          </li>
+          <li class="main-menu__item main-menu__item--mobile-hidden">
+            <a class="main-menu__link" href="#">Looks</a>
+          </li>
+          <li class="main-menu__item main-menu__item--mobile-hidden">
+            <a class="main-menu__link" href="#">Блог</a>
+          </li>
+          <li class="main-menu__item main-menu__item--mobile-hidden">
+            <a class="main-menu__link" href="#">Streetstyle</a>
+          </li>
+        </ul>
+        <ul class="main-menu__list main-menu__list--form">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Войти в личный кабинет</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Отзывы</a>
+          </li>
+          <li class="main-menu__item">
+            <form class="main-menu__search" method="POST" action="#">
+              <input class="main-menu__search-field" type="text" id="menusearch" placeholder="Найти на сайте">
+              <label class="visually-hidden" for="menusearch">Найти на сайте</label>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img class="header__logo" src="img/logo.svg" alt="I am woman. Moscow." width="156" height="28">
+    <ul class="header__icons short-menu">
+      <li class="short-menu__item">
+        <a class="short-menu__link" href="#">
+          <svg width="16" height="16" version="1.2" baseProfile="tiny" id="Shape_1_1_"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 800 800" xml:space="preserve">
+            <g id="Shape_1">
+              <path fill-rule="evenodd" d="M800,781.7v-11.3c-1-4.1-3-8-6.2-11.2L599.4,564.8c52.1-60,83.7-138.2,83.7-223.7
+          C683.1,152.9,530.1,0,342.1,0C153.9,0,1,153.1,1,341.1c0,188,153.1,341.1,341.1,341.1c85.5,0,163.7-31.6,223.6-83.7l194.4,194.4
+          c4.6,4.6,10.8,7.1,16.8,7.1c6,0,12.2-2.3,16.8-7.1C797,789.7,799,785.8,800,781.7z M341.9,634.5c-161.6,0-293.2-131.6-293.2-293.4
+          c0-161.8,131.6-293.2,293.2-293.2C503.6,47.9,635,179.5,635,341.1C635,502.7,503.6,634.5,341.9,634.5z" />
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="short-menu__item">
+        <a class="short-menu__link" href="#">
+          <svg width="15" height="16" version="1.2" baseProfile="tiny" id="Shape_1_1_"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 680 800" xml:space="preserve">
+            <g id="Shape_1">
+              <path fill-rule="evenodd" d="M337.6,431.1c0.8,0,1.7,0,2.7,0c0.3,0,0.7,0,1,0c0.5,0,1.2,0,1.7,0c48.5-0.8,87.8-17.9,116.8-50.5
+            c63.8-71.9,53.2-195.2,52-206.9c-4.1-88.3-45.9-130.5-80.3-150.3C405.7,8.6,375.7,0.7,342.2,0h-1.2c-0.2,0-0.5,0-0.7,0h-1
+            c-18.4,0-54.5,3-89.1,22.7c-34.8,19.7-77.2,62-81.3,150.9c-1.2,11.8-11.8,135,52,206.9C249.8,413.2,289.1,430.2,337.6,431.1z
+            M213.2,177.8c0-0.5,0.2-1,0.2-1.3c5.5-118.8,89.8-131.5,125.9-131.5h0.7c0.3,0,0.8,0,1.3,0c44.7,1,120.8,19.2,125.9,131.5
+            c0,0.5,0,1,0.2,1.3c0.2,1.2,11.8,113.8-40.9,173.1c-20.9,23.5-48.7,35.1-85.3,35.5c-0.3,0-0.5,0-0.8,0c-0.3,0-0.5,0-0.8,0
+            c-36.4-0.3-64.4-11.9-85.1-35.5C201.8,291.9,213,178.8,213.2,177.8z M605.5,496.8c-0.5-0.2-1.2-0.3-1.7-0.5
+            c-74.7-19.1-136.8-62.1-137.5-62.6c-10.1-7.1-24-4.6-31.1,5.5c-7.1,10.1-4.6,24,5.5,31.1c2.8,2,68.7,47.9,151.2,69.1
+            c38.6,13.8,42.9,55,44.1,92.8c0,1.5,0,2.8,0.2,4.1c0.2,14.9-0.8,37.9-3.5,51.2c-26.8,15.2-132,67.9-292,67.9
+            c-159.4,0-265.2-52.8-292.2-68.1c-2.7-13.3-3.8-36.3-3.5-51.2c0-1.3,0.2-2.7,0.2-4.1c1.2-37.8,5.5-79,44.1-92.8
+            c82.5-21.2,148.4-67.3,151.2-69.1c10.1-7.1,12.6-21,5.5-31.1c-7.1-10.1-21-12.6-31.1-5.5c-0.7,0.5-62.5,43.6-137.5,62.6
+            c-0.7,0.2-1.2,0.3-1.7,0.5c-71.9,24.7-74,101.4-75,134c0,1.5,0,2.8-0.2,4.1c0,0.2,0,0.3,0,0.5c-0.2,8.6-0.3,52.8,8.4,75
+            c1.7,4.3,4.6,8,8.6,10.4c5,3.3,124.1,79.2,323.4,79.2c199.3,0,318.4-76,323.4-79.2c3.8-2.5,7-6.1,8.6-10.4
+            c4.4-11.6,6.4-29.3,7.3-44.7v-47.9C678.1,580.9,669,518.5,605.5,496.8z" />
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="short-menu__item">
+        <a class="short-menu__link" href="#">
+          <svg width="15" height="16" version="1.2" baseProfile="tiny" id="Shape_1_1_"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 640 800" xml:space="preserve">
+            <g id="Shape_1">
+              <path fill-rule="evenodd" d="M639.8,691.5l-45.8-515.8c-1-11.5-10.6-20.1-21.9-20.1H478C476.6,69.5,406.3,0,320,0
+          c-86.3,0-156.6,69.5-158,155.6H67.9c-11.4,0-20.9,8.7-21.9,20.1L0.2,691.5c0,0.7-0.2,1.3-0.2,2C0,752.2,53.8,800,120,800h400
+          c66.2,0,120-47.8,120-106.5C640,692.8,640,692.2,639.8,691.5z M320,44.2c62,0,112.5,49.7,113.8,111.4H206.2
+          C207.5,93.9,258,44.2,320,44.2z M520,755.8H120c-41.5,0-75.2-27.5-75.9-61.3L88,199.9h73.9V267c0,12.3,9.8,22.1,22.1,22.1
+          c12.3,0,22.1-9.8,22.1-22.1v-67.1h227.8V267c0,12.3,9.8,22.1,22.1,22.1c12.3,0,22.1-9.8,22.1-22.1v-67.1h73.9l44,494.6
+          C595.2,728.3,561.3,755.8,520,755.8z" />
+            </g>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <h1 class="visually-hidden">I AM WOMAN. MOSCOW</h1>
+
+    <section class="promo container">
+      <div class="promo__wrap">
+        <a class="promo__sale-menu" href="#">Распродажа SS’18</a>
+        <div class="promo__label-wrap">
+          <h2 class="promo__label">Новая круизная коллекция ‘19</h2>
+          <a class="promo__link" href="#">Перейти в каталог</a>
+        </div>
+        <div class="promo__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--active">
+              <img class="slider__picture" src="img/slide-1-mobile.jpg" width="219" height="389"
+                alt="Хлопковое платье в полоску.">
+              <a class="slider__name" href="#">Хлопковое платье в полоску</a>
+              <p class="slider__price">9 900 рублей</p>
+            </li>
+            <li class="slider__item">
+              <img class="slider__picture" src="http://placehold.it/605x681">
+              <a class="slider__name" href="#">Спортивный желтый костюм</a>
+              <p class="slider__price">9 900 рублей</p>
+            </li>
+            <li class="slider__item">
+              <img class="slider__picture" src="http://placehold.it/605x681">
+              <a class="slider__name" href="#">Платье — халат со стразами</a>
+              <p class="slider__price">9 900 рублей</p>
+            </li>
+          </ul>
+          <div class="slider__control">
+            <button class="slider__button slider__button--left">Предыдущий слайд</button>
+            <span class="slider__pages">01/3</span>
+            <button class="slider__button slider__button--left">Следующий слайд</button>
+          </div>
+          <a class="slider__link" href="#">Смотреть все</a>
+        </div>
+        <ul class="promo__side-nav side-nav">
+          <li class="side-nav__item side-nav__item--active"><a href="#">01</a></li>
+          <li class="side-nav__item">
+            <a class="main-menu__link" href="#">02</a></li>
+          <li class="side-nav__item">
+            <a class="main-menu__link" href="#">04</a></li>
+          <li class="side-nav__item">
+            <a class="main-menu__link" href="#">05</a></li>
+          <li class="side-nav__item">
+            <a class="main-menu__link" href="#">06</a></li>
+        </ul>
+        <ul class="promo__social social">
+          <li class="social__item">
+            <a class="main-menu__link" href="#">Facebook</a></li>
+          <li class="social__item">
+            <a class="main-menu__link" href="#">Youtube</a></li>
+          <li class="social__item">
+            <a class="main-menu__link" href="#">Vkontakte</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="js/main-menu.js"></script>
+  </main>
+</body>
 
 </html>
