@@ -25,3 +25,22 @@
 .header__icons {
   margin-right: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    margin-left: -($tablet-width / 2);
+  }
+
+  .header__menu-button {
+    margin-right: 80px;
+  }
+
+  .header__logo {
+    display: block;
+    margin-right: auto;
+  }
+
+  .header__icons {
+    margin-right: 60px;
+  }
+}

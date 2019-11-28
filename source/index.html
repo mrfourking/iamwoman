@@ -118,14 +118,13 @@
         </ul>
       </div>
     </nav>
-    <img class="header__logo" src="img/logo.svg" alt="I am woman. Moscow." width="156" height="28">
+    <img class="header__logo" src="img/logo-tablet.png" alt="I am woman. Moscow." width="156" height="28">
     <ul class="header__icons short-menu">
       <li class="short-menu__item">
         <a class="short-menu__link" href="#">
-          <svg width="16" height="16" version="1.2" baseProfile="tiny" id="Shape_1_1_"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 800 800" xml:space="preserve">
-            <g id="Shape_1">
+          <svg width="16" height="16" version="1.2" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" xml:space="preserve">
+            <g>
               <path fill-rule="evenodd" d="M800,781.7v-11.3c-1-4.1-3-8-6.2-11.2L599.4,564.8c52.1-60,83.7-138.2,83.7-223.7
           C683.1,152.9,530.1,0,342.1,0C153.9,0,1,153.1,1,341.1c0,188,153.1,341.1,341.1,341.1c85.5,0,163.7-31.6,223.6-83.7l194.4,194.4
           c4.6,4.6,10.8,7.1,16.8,7.1c6,0,12.2-2.3,16.8-7.1C797,789.7,799,785.8,800,781.7z M341.9,634.5c-161.6,0-293.2-131.6-293.2-293.4
@@ -136,10 +135,9 @@
       </li>
       <li class="short-menu__item">
         <a class="short-menu__link" href="#">
-          <svg width="15" height="16" version="1.2" baseProfile="tiny" id="Shape_1_1_"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 680 800" xml:space="preserve">
-            <g id="Shape_1">
+          <svg width="15" height="16" version="1.2" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680 800" xml:space="preserve">
+            <g>
               <path fill-rule="evenodd" d="M337.6,431.1c0.8,0,1.7,0,2.7,0c0.3,0,0.7,0,1,0c0.5,0,1.2,0,1.7,0c48.5-0.8,87.8-17.9,116.8-50.5
             c63.8-71.9,53.2-195.2,52-206.9c-4.1-88.3-45.9-130.5-80.3-150.3C405.7,8.6,375.7,0.7,342.2,0h-1.2c-0.2,0-0.5,0-0.7,0h-1
             c-18.4,0-54.5,3-89.1,22.7c-34.8,19.7-77.2,62-81.3,150.9c-1.2,11.8-11.8,135,52,206.9C249.8,413.2,289.1,430.2,337.6,431.1z
@@ -159,10 +157,9 @@
       </li>
       <li class="short-menu__item">
         <a class="short-menu__link" href="#">
-          <svg width="15" height="16" version="1.2" baseProfile="tiny" id="Shape_1_1_"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 640 800" xml:space="preserve">
-            <g id="Shape_1">
+          <svg width="15" height="16" version="1.2" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 800" xml:space="preserve">
+            <g>
               <path fill-rule="evenodd" d="M639.8,691.5l-45.8-515.8c-1-11.5-10.6-20.1-21.9-20.1H478C476.6,69.5,406.3,0,320,0
           c-86.3,0-156.6,69.5-158,155.6H67.9c-11.4,0-20.9,8.7-21.9,20.1L0.2,691.5c0,0.7-0.2,1.3-0.2,2C0,752.2,53.8,800,120,800h400
           c66.2,0,120-47.8,120-106.5C640,692.8,640,692.2,639.8,691.5z M320,44.2c62,0,112.5,49.7,113.8,111.4H206.2
@@ -188,8 +185,12 @@
         <div class="promo__slider slider">
           <ul class="slider__list">
             <li class="slider__item slider__item--active">
-              <img class="slider__picture" src="img/slide-1-mobile.jpg" width="219" height="389"
-                alt="Хлопковое платье в полоску.">
+              <picture>
+                <source media="(min-width: 768px)" sizes="(min-width: 768px) 393px, 647px"
+                  srcset="img/slide-1-tablet.jpg">
+                <img class="slider__picture" src="img/slide-1-mobile.jpg" sizes="219px, 389px"
+                  alt="Хлопковое платье в полоску.">
+              </picture>
               <a class="slider__name" href="#">Хлопковое платье в полоску</a>
               <p class="slider__price">9 900 рублей</p>
             </li>

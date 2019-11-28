@@ -10,3 +10,9 @@
 .short-menu__item {
   margin-left: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .short-menu__item {
+    margin-left: 85px;
+  }
+}
