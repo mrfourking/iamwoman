@@ -1,0 +1,41 @@
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    margin: 0;
+    margin-top: -20px;
+
+    list-style: none;
+  }
+
+  .social__item {
+    position: relative;
+
+    margin-right: 40px;
+
+    a {
+      font-family: "opensans", "Arial", sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: -30px;
+
+      width: 20px;
+      height: 1px;
+
+      background-color: $text-color;
+
+      box-shadow: 1px 1px 0 0 $social-shadow-color;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}

@@ -29,10 +29,12 @@
 @media (min-width: $tablet-width) {
   .header {
     margin-left: -($tablet-width / 2);
+    padding-top: 30px;
   }
 
   .header__menu-button {
     margin-right: 80px;
+    margin-left: 10px;
   }
 
   .header__logo {
