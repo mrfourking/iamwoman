@@ -1,8 +1,10 @@
 @media (min-width: $tablet-width) {
   .social {
+    z-index: 1;
     display: flex;
     margin: 0;
     margin-top: -20px;
+    padding: 0;
 
     list-style: none;
   }
@@ -36,6 +38,27 @@
 
     &:last-child::after {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-top: -85px;
+    margin-left: 80px;
+  }
+
+  .social__item {
+    margin-right: 46px;
+
+    a {
+      font-size: 16px;
+    }
+
+    &::after {
+      right: -35px;
+
+      width: 24px;
     }
   }
 }

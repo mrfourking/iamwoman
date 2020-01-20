@@ -113,3 +113,42 @@
     color: $text-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__name-wrap {
+    align-self: center;
+    width: 367px;
+    margin-top: -180px;
+    margin-bottom: 80px;
+  }
+
+  .slider__price {
+    font-size: 18px;
+  }
+
+  .slider__button {
+    margin: 0 24px;
+
+    svg {
+      width: 10px;
+      height: 17px;
+    }
+
+    cursor: pointer;
+  }
+
+  .slider__page {
+    font-size: 24px;
+
+    &--current {
+      font-size: 36px;
+    }
+  }
+
+  .slider__link {
+    align-self: center;
+    margin-left: 113px;
+
+    font-size: 18px;
+  }
+}

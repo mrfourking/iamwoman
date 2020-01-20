@@ -3,6 +3,7 @@
 (function () {
   const SLIDE_NUMBER = 3;
   const SLIDE_CLASS_ACTIVE = "slider__item--active";
+  const DESKTOP_WIDTH = 1440;
   const Directions = {
     NEXT: true,
     PREV: false
@@ -70,7 +71,11 @@
       }
     }
 
-    promoBlock.style.backgroundImage = "url('" + sliderPictures[getCurrentSlide()].currentSrc + "')";
+    if (document.body.clientWidth < DESKTOP_WIDTH) {
+      promoBlock.style.backgroundImage = "url('" + sliderPictures[getCurrentSlide()].currentSrc + "')";
+    } else {
+      promoBlock.style.backgroundImage = "url('../img/slide-" + (getCurrentSlide() + 1) + "-bg-desktop.jpg')";
+    }
     sliderCounter.textContent = "0" + (getCurrentSlide() + 1) + "/";
   };
 

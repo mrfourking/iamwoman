@@ -71,11 +71,51 @@
     font-size: 36px;
   }
 
+  .promo__link {
+    font-size: 16px;
+  }
+
   .promo__slider {
     margin-left: -117px;
   }
 
   .promo__social {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/slide-1-bg-desktop.jpg");
+    background-position: 101% 0;
+    background-size: auto 100%;
+  }
+
+  .promo__wrap {
+    padding: 80px 100px 12px 55px;
+
+    background: linear-gradient(to right, transparent 48%, rgba($promo-bg-color, 0.8) 48%);
+  }
+
+  .promo__label-wrap {
+    width: 485px;
+    margin-top: 250px;
+  }
+
+  .promo__label {
+    font-size: 48px;
+  }
+
+  .promo__link {
+    font-size: 18px;
+  }
+
+  .promo__slider {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
+  .promo__side-nav {
     display: flex;
   }
 }

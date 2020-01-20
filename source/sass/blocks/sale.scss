@@ -11,12 +11,12 @@
 
     background-color: $sale-bg-color;
 
-    & a {
+    a {
       position: relative;
 
       display: block;
       width: 100px;
-      margin-bottom: 165px;
+      margin-bottom: 160px;
       margin-left: 20px;
 
       color: $text-color;
@@ -38,6 +38,16 @@
         background-color: $sale-line-color;
         box-shadow: 0 1px 0 0 $sale-shadow-color;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sale {
+    max-width: 75px;
+
+    a {
+      margin-left: 28px;
     }
   }
 }

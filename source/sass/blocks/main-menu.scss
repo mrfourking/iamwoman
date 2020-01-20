@@ -120,27 +120,44 @@
   }
 
   .main-menu__search {
-    position: relative;
+    display: flex;
+    width: 284px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 10px;
-      left: 0;
+    border-bottom: 1px solid $text-color;
 
-      width: 17px;
-      height: 17px;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 10px;
+    //   left: 0;
 
-      background-image: url("../img/magnifying-glass-icon.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
+    //   width: 17px;
+    //   height: 17px;
+
+    //   background-image: url("../img/magnifying-glass-icon.svg");
+    //   background-position: 0 0;
+    //   background-repeat: no-repeat;
+    // }
+  }
+
+  .main-menu__search-button {
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+
+    border: none;
+
+    svg path {
+      fill: $text-color;
     }
   }
 
   .main-menu__search-field {
-    width: 283px;
+    flex-grow: 1;
     margin: 0;
-    padding: 10px 0 10px 51px;
+    padding: 10px;
+    padding-left: 31px;
 
     font-size: 18px;
     font-weight: 300;
@@ -149,7 +166,6 @@
     background-color: transparent;
 
     border: none;
-    border-bottom: 1px solid $text-color;
 
     &::placeholder {
       font-size: 18px;
@@ -166,5 +182,15 @@
 
       transition: opacity 0.3s ease;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__close-button {
+    cursor: pointer;
+  }
+
+  .main-menu__search-button {
+    cursor: pointer;
   }
 }
