@@ -81,7 +81,7 @@
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">Контакты</a>
           </li>
-          <li class="main-menu__item">
+          <li class="main-menu__item main-menu__item--desktop-hidden">
             <a class="main-menu__link" href="#">Отзывы</a>
           </li>
         </ul>
@@ -101,18 +101,12 @@
           <li class="main-menu__item main-menu__item--mobile-hidden">
             <a class="main-menu__link" href="#">Streetstyle</a>
           </li>
-          <li class="main-menu__item main-menu__item--mobile-hidden">
+          <li class="main-menu__item main-menu__item--mobile-hidden  main-menu__item--desktop-hidden">
             <a class="main-menu__link" href="#">Войти в личный кабинет</a>
           </li>
         </ul>
       </div>
       <ul class="main-menu__list main-menu__list--form">
-        <li class="main-menu__item main-menu__item--tablet-hidden">
-          <a class="main-menu__link" href="#">Войти в личный кабинет</a>
-        </li>
-        <li class="main-menu__item main-menu__item--tablet-hidden">
-          <a class="main-menu__link" href="#">Отзывы</a>
-        </li>
         <li class="main-menu__item">
           <form class="main-menu__search" method="POST" action="#">
             <button class="main-menu__search-button" type="submit">
@@ -128,6 +122,12 @@
             <input class="main-menu__search-field" type="text" id="menusearch" placeholder="Найти на сайте">
             <label class="visually-hidden" for="menusearch">Найти на сайте</label>
           </form>
+        </li>
+        <li class="main-menu__item main-menu__item--tablet-hidden">
+          <a class="main-menu__link" href="#">Войти в личный кабинет</a>
+        </li>
+        <li class="main-menu__item main-menu__item--tablet-hidden">
+          <a class="main-menu__link" href="#">Отзывы</a>
         </li>
       </ul>
     </nav>
@@ -289,7 +289,23 @@
       </section>
     </div>
 
+    <!-- <section class="new">
+      <h2 class="new__title">Новое поступление</h2>
+      <ul class="new__menu">
+        <li class="new__menu-item">
+          <a href="#">Платья</a>
+        </li>
+        <li class="new__menu-item">
+          <a href="#">Блузы и топы</a>
+        </li>
+        <li class="new__menu-item">
+          <a href="#">Брюки и юбки</a>
+        </li>
+      </ul>
+    </section> -->
 
+
+    <script src="js/uitl.js"></script>
     <script src="js/main-menu.js"></script>
     <script src="js/slider.js"></script>
   </main>

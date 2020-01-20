@@ -3,7 +3,6 @@
 (function () {
   const SLIDE_NUMBER = 3;
   const SLIDE_CLASS_ACTIVE = "slider__item--active";
-  const DESKTOP_WIDTH = 1440;
   const Directions = {
     NEXT: true,
     PREV: false
@@ -71,7 +70,7 @@
       }
     }
 
-    if (document.body.clientWidth < DESKTOP_WIDTH) {
+    if (document.body.clientWidth < window.util.DESKTOP_WIDTH) {
       promoBlock.style.backgroundImage = "url('" + sliderPictures[getCurrentSlide()].currentSrc + "')";
     } else {
       promoBlock.style.backgroundImage = "url('../img/slide-" + (getCurrentSlide() + 1) + "-bg-desktop.jpg')";

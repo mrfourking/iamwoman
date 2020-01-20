@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   top: 0;
+  left: 0;
   width: 100%;
   padding: 20px 15px 56px 38px;
 
@@ -77,6 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .main-menu {
+    left: unset;
     right: 0;
 
     justify-content: flex-start;
@@ -124,20 +126,6 @@
     width: 284px;
 
     border-bottom: 1px solid $text-color;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   bottom: 10px;
-    //   left: 0;
-
-    //   width: 17px;
-    //   height: 17px;
-
-    //   background-image: url("../img/magnifying-glass-icon.svg");
-    //   background-position: 0 0;
-    //   background-repeat: no-repeat;
-    // }
   }
 
   .main-menu__search-button {
@@ -186,8 +174,34 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-menu {
+    width: 1365px;
+    padding: 50px 90px 186px 80px;
+  }
+
   .main-menu__close-button {
+    margin-bottom: 145px;
+
     cursor: pointer;
+  }
+
+  .main-menu__list {
+    margin-right: 150px;
+
+    &--form {
+      margin-right: 0;
+      padding: 0;
+    }
+  }
+
+  .main-menu__item {
+    &--desktop-hidden {
+      display: none;
+    }
+
+    &--tablet-hidden {
+      display: block;
+    }
   }
 
   .main-menu__search-button {

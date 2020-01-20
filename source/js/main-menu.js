@@ -1,8 +1,6 @@
 "use strict";
 
 (function () {
-  const ESC_CODE = 27;
-
   let mainMenu = document.querySelector(".main-menu");
   let mainMenuButton = document.querySelector(".header__menu-button");
   let closeMenuButton = document.querySelector(".main-menu__close-button");
@@ -15,7 +13,7 @@
   };
 
   let onEscKeydown = function (evt) {
-    if (evt.keyCode === ESC_CODE) {
+    if (window.util.isEscPressed(evt)) {
       closeMenu();
     }
   };
@@ -23,7 +21,11 @@
   let onMenuButtonCLick = function () {
     if (mainMenu.classList.contains("hidden")) {
       mainMenu.classList.remove("hidden");
-      mainMenuButton.style = "z-index: 100; padding-top: 10px;";
+      if (document.body.clientWidth < window.util.DISPLAY_WIDTH) {
+        mainMenuButton.style = "z-index: 100; padding-top: 10px;";
+      } else {
+        mainMenuButton.style = "z-index: 100;";
+      }
       document.addEventListener("keydown", onEscKeydown);
       closeMenuButton.addEventListener("click", onCloseButtonClick);
     } else {
