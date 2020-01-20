@@ -10,3 +10,22 @@
 .short-menu__item {
   margin-left: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .short-menu__item {
+    margin-left: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .short-menu__item {
+    margin-left: 120px;
+  }
+
+  .short-menu__link {
+    svg {
+      width: auto;
+      height: 20px;
+    }
+  }
+}

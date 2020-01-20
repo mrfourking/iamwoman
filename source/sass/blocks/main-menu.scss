@@ -6,7 +6,7 @@
   justify-content: space-between;
   top: 0;
   width: 100%;
-  padding: 100px 15px 56px 38px;
+  padding: 20px 15px 56px 38px;
 
   background-color: $promo-bg-color;
   background-image: url("../img/menu-bg-mobile.jpg");
@@ -16,11 +16,9 @@
 }
 
 .main-menu__close-button {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-
   margin: 0;
+  margin-bottom: 53px;
+  margin-left: auto;
   padding: 0;
 
   background-color: transparent;
@@ -74,5 +72,125 @@
   &--medium {
     font-size: 18px;
     font-weight: 500;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    right: 0;
+
+    justify-content: flex-start;
+    width: 718px;
+    padding: 37px;
+    padding-left: 55px;
+  }
+
+  .main-menu__close-button {
+    margin-bottom: 160px;
+  }
+
+  .main-menu__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-menu__list {
+    margin-right: 50px;
+
+    &--form {
+      display: block;
+      padding-top: 69px;
+    }
+  }
+
+  .main-menu__item {
+    margin-bottom: 20px;
+
+    &--mobile-hidden {
+      display: flex;
+    }
+
+    &--tablet-hidden {
+      display: none;
+    }
+  }
+
+  .main-menu__link {
+    font-size: 18px;
+  }
+
+  .main-menu__search {
+    display: flex;
+    width: 284px;
+
+    border-bottom: 1px solid $text-color;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 10px;
+    //   left: 0;
+
+    //   width: 17px;
+    //   height: 17px;
+
+    //   background-image: url("../img/magnifying-glass-icon.svg");
+    //   background-position: 0 0;
+    //   background-repeat: no-repeat;
+    // }
+  }
+
+  .main-menu__search-button {
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+
+    border: none;
+
+    svg path {
+      fill: $text-color;
+    }
+  }
+
+  .main-menu__search-field {
+    flex-grow: 1;
+    margin: 0;
+    padding: 10px;
+    padding-left: 31px;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: $slider-page-color;
+
+    background-color: transparent;
+
+    border: none;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 300;
+      color: $slider-page-color;
+
+      opacity: 1;
+
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__close-button {
+    cursor: pointer;
+  }
+
+  .main-menu__search-button {
+    cursor: pointer;
   }
 }

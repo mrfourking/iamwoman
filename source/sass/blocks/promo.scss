@@ -9,6 +9,7 @@
 .promo__wrap {
   display: flex;
   padding: 50px 15px;
+
   background-color: rgba($promo-bg-color, 0.8);
 }
 
@@ -26,6 +27,9 @@
 }
 
 .promo__label {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 24px;
   font-weight: 500;
 }
@@ -40,4 +44,78 @@
 
 .promo__slider {
   margin-left: -64px;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    background-color: transparent;
+    background-image: url("../img/slide-1-tablet.jpg");
+    background-position: 215% -25px;
+    background-size: auto 110%;
+  }
+
+  .promo__wrap {
+    flex-wrap: wrap;
+    padding: 90px 59px 32px 32px;
+
+    background: linear-gradient(to right, transparent 51.5%, rgba($promo-bg-color, 0.8) 51.5%);
+  }
+
+  .promo__label-wrap {
+    width: 350px;
+    margin-top: 300px;
+  }
+
+  .promo__label {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .promo__link {
+    font-size: 16px;
+  }
+
+  .promo__slider {
+    margin-left: -117px;
+  }
+
+  .promo__social {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/slide-1-bg-desktop.jpg");
+    background-position: 101% 0;
+    background-size: auto 100%;
+  }
+
+  .promo__wrap {
+    padding: 80px 100px 12px 55px;
+
+    background: linear-gradient(to right, transparent 48%, rgba($promo-bg-color, 0.8) 48%);
+  }
+
+  .promo__label-wrap {
+    width: 485px;
+    margin-top: 250px;
+  }
+
+  .promo__label {
+    font-size: 48px;
+  }
+
+  .promo__link {
+    font-size: 18px;
+  }
+
+  .promo__slider {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
+  .promo__side-nav {
+    display: flex;
+  }
 }

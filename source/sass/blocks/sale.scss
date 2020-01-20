@@ -1,0 +1,53 @@
+.sale {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .sale {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+    max-width: 50px;
+
+    background-color: $sale-bg-color;
+
+    a {
+      position: relative;
+
+      display: block;
+      width: 100px;
+      margin-bottom: 160px;
+      margin-left: 20px;
+
+      color: $text-color;
+      text-decoration: none;
+      white-space: pre;
+
+      transform-origin: 0 0;
+      transform: rotate(-90deg);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -124px;
+
+        width: 94px;
+        height: 1px;
+
+        background-color: $sale-line-color;
+        box-shadow: 0 1px 0 0 $sale-shadow-color;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sale {
+    max-width: 75px;
+
+    a {
+      margin-left: 28px;
+    }
+  }
+}
